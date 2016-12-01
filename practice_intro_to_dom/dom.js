@@ -5,28 +5,28 @@
 
 
 //I want to get the node with id ="intro", and store the value in introParagraph
-var introParagraph = "FILL_ME_IN"
+var introParagraph = document.getElementById('intro').textContent;
 
-//now test this using this
-// console.log(introParagraph);
+// now test this using this
+console.log(introParagraph);
 
 // We now have a reference to the DOM node. This DOM
 // node represents the intro paragraph.
 
  // Access single unordered list: [0] index
-var unorderedList1 = "FILL_ME_IN"
-// console.log(unorderedList1);
+var unorderedList1 = document.getElementsByTagName('ul')[0];
+console.log(unorderedList1);
 
 // Access single unordered list: [2] index
-var unorderedList2 = "FILL_ME_IN"
-// console.log(unorderedList2);
+var unorderedList2 = document.getElementsByTagName('ul')[2];
+console.log(unorderedList2);
 
 // Create Node list of all list items within the UL for unorderedList1:
-var allListItems1 = "FILL_ME_IN"
-// console.log(allListItems1);
+var allListItems1 = document.getElementsByTagName('ul')[0].getElementsByTagName('ul')[0];
+console.log(allListItems1);
 
 // Create Node list of all list items within the UL for unorderedList2:
-var allListItems2 = "FILL_ME_IN"
-// console.log(allListItems2);
+var allListItems2 = document.getElementsByTagName('ul')[2].getElementsByTagName('ul')[0];
+console.log(allListItems2);
 
 
